@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Южная Стена</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Навигация -->
+    <nav class="navbar navbar-expand-md  navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <a href="#" class="navbar-brand"><img src="img/logo.png"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="#" class="nav-link">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#aboutUs" class="nav-link">Про нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#prices" class="nav-link">Цены</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#guilds" class="nav-link">Гильдии</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Карусель -->
+    <div class="carousel slide" data-ride="carousel" id="slides">
+        <ul class="carousel-indicators">
+            <li data-target="#slides" data-slide-to="0" class="active"></li>
+            <li data-target="#slides" data-slide-to="1"></li>
+            <li data-target="#slides" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/wall1.png">
+                <div class="carousel-caption">
+                    <h2 class="display-3">"Южная Стена"</h2>
+                    <h3>Круглосуточная таверна</h3>
+                    <button type="button" class="btn btn-outline-light btn-lg">Меню и цены</button>
+                    <button type="button" class="btn btn-outline-success btn-lg">Забронировать</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/wall4.png">
+            </div>
+            <div class="carousel-item">
+                <img src="img/wall3.png">
+            </div>
+        </div>
+    </div>
+    <!-- Блок с цитатой -->
+    <div class="container-fluid">
+        <div class="row jumbotron">
+            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+                <p class="lead">Южная стена — это кабачок рабочего класса в Балморе, к востоку от реки Одай, в южном конце Улицы Труда, принадлежит Баколе Клосиусу.
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+                <a href="#"><button class="btn btn-dark btn-lg" type="button">Узнать больше</button></a>
+            </div>
+        </div>
+    </div>
+    <!-- Блок с подробным описанием -->
+    <div class="container-fluid">
+        <div class="row text-center alert">
+            <div class="col-12">
+                <h1 class="display-4" id="aboutUs">Что это такое?</h1>
+            </div>
+            <hr>
+            <div class="col-12">
+                <p class="lead">Южная Стена — двухэтажный трактир, место собрания балморской Гильдии воров. Находится в восточной части Балморы, Рабочем Городе, во втором ряду домов от реки. Как и многие здания в городе, несмотря на то, что снаружи постройка выглядит двухэтажной, внутри имеется три этажа: первый, второй и подземный. При входе посетитель попадает на первый этаж, где стоит Соттильд, одна из членов Гильдии воров, что обосновались здесь. Слева от входа находится лестница, ведущая на второй этаж. На втором этаже, помимо хозяина трактира Баколы Клосиуса, есть две двери. Одна ведёт на балкон, где стоит деревянный ящик со случайным содержимым. За второй дверью, закрытой на замок 50 уровня, стоит кровать, которую можно снять за 10 монет у хозяина трактира, и круглый столик с кувшином и кубком.</p>
+            </div>
+        </div>
+    </div>
+    <hr class="my-4">
+    <!-- Закрытая секция -->
+    <div class="text-center">
+            <button type="button" id="gifsBtn" class="btn btn-success" data-toggle="collapse" data-target="#gifs">Наш персонал</button>
+    </div>
+    <div id="gifs" class="collapse">
+            <div class="container-fluid padding">
+                <div class="row text-center">
+                    <div class="col-sm-6 col-md-3">
+                        <img src="img/gif1.gif" class="gif">
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="img/gif2.gif" class="gif">
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="img/gif3.gif" class="gif">
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <img src="img/gif4.gif" class="gif">
+                    </div>
+                </div>
+            </div>
+    </div>
+    <!-- Блок с ценами -->
+    <div class="container-fluid padding">
+        <div class="row text-center padding">
+            <div class="col-12">
+                <h2 class="display-4" id="prices">Цены</h2>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-utensils"></i>
+                <h3>Меню таверны</h3>
+                <p>Мясо с картофелем - 3 септима</p>
+                <p>Скаттл и крабовое мясо - 5 септим</p>
+                <p>Хлеб - 1 септим</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fab fa-untappd"></i>
+                <h3>Карта бара</h3>
+                <p>Флин- 2 септима</p>
+                <p>Грииф - 3 септима</p>
+                <p>Скума - 10 септим</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <i class="fas fa-bed"></i>
+                <h3>Комната</h3>
+                <p>1 ночь - 10 септим</p>
+                <p>Неделя - 50 септим</p>
+                <p>Месяц и более - цена договорная</p>
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+    <!-- Секция с изображением -->
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="offset-lg-1 col-lg-4">
+                <h2>Что посмотреть в Балморе</h2>
+                <p>
+                    Балмора (дан. Каменный лес) — один из самых богатых и красивых городов острова Вварденфелл, второй по величине после Вивека. Основанный на заре колонизации Вварденфелла, этот город быстро занял доминирующее положение в регионе. Для этого имелось несколько предпосылок. Во-первых, Великий Дом Хлаалу, основавший Балмору, по праву считается самым могущественным и богатым домом Морровинда. Во-вторых, удачное расположение города позволило ему стать связующим звеном между северными и южными районами Вварденфелла и важным центром торговли и путешествий.
+                    <br><br>
+                    Условно город делится на три части: Высокий Город — административный центр, где расположен Храм и поместья; Торговый Район находится по правую сторону реки Одай, здесь расположились магазины, Гильдии и торговые дома; в Рабочем Городе, что находится на левом берегу реки, находятся трактиры и дома жителей Балморы.
+                </p>
+                
+                <a href="#" class="btn btn-dark">Подробнее</a>
+            </div>
+            <div class="col-lg-6">
+                <br>
+                <img src="img/outside.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <!-- Фиксированное зображение -->
+    <figure>
+        <div class="fixed-wrap">
+            <div id="fixed">
+
+            </div>
+        </div>
+    </figure>
+
+    <!-- Карточки гильдий -->
+    <div class="container-fluid padding">
+        <div class="row alert text-center">
+            <div class="col-12">
+                <h1 class="display-4" id="guilds">Гильдии Балморы</h1>
+            </div>
+            <hr>
+        </div>
+    </div>
+    <div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="img/guild1.png" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Гильдия Магов</h4>
+                        <p class="card-text">Основной задачей Гильдии является изучение и применение магии. Все самые популярные зелья и волшебные предметы были созданы членами Гильдии магов.</p>
+                        <a href="#" class="btn btn-warning">Вступить</a>
+                    </div>
+                </div>
+            </div>
+                <div class="col-md-4">
+                <div class="card">
+                    <img src="img/guild2.png" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Гильдия Воров</h4>
+                        <p class="card-text">Это организация профессионалов, среди которых есть воры, грабители, карманники, контрабандисты и представители других профессий.</p>
+                        <a href="#" class="btn btn-warning">Вступить</a>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-4">
+                <div class="card">
+                    <img src="img/guild3.png" class="card-img-top">
+                    <div class="card-body">
+                        <h4 class="card-title">Гильдия Бойцов</h4>
+                        <p class="card-text">"э"то профессиональная организация, основанная Императором для урегулирования вопросов, связанных с наймом и тренировкой наемников.</p>
+                        <a href="#" class="btn btn-warning">Вступить</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Футер -->
+    <footer class="container-fluid">
+        <div class="container">
+            <div class="row padding text-center">
+                <div class="col-12">
+                    <h2 id="contacts">Наши контакты</h2>
+                </div>
+                <div class="col-12 padding social">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
