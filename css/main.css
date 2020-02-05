@@ -6,10 +6,15 @@ body, html {
     font-family: 'Montserrat Alternates', sans-serif;
     color: #222;
     background-color: #FDF5E6;
+    scroll-behavior: smooth;
 }
 
 .navbar-brand img {
     height: 50px;
+}
+
+#kar {
+    display: none;
 }
 
 .navbar-nav li {
